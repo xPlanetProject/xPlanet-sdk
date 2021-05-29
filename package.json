@@ -1,8 +1,8 @@
 {
-  "name": "xplant-sdk",
+  "name": "@xplanet/sdk",
   "license": "MIT",
-  "version": "1.0.0",
-  "description": "🛠 An SDK for building applications on top of xPlantSwap",
+  "version": "1.2.4",
+  "description": "🛠 An SDK for building applications on top of xPlanetSwap",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
@@ -23,6 +23,9 @@
   },
   "dependencies": {
     "@ethersproject/address": "^5.0.0",
+    "@ethersproject/contracts": "^5.2.0",
+    "@ethersproject/networks": "^5.2.0",
+    "@ethersproject/providers": "^5.2.0",
     "@ethersproject/solidity": "^5.0.0",
     "@uniswap/sdk-core": "^3.0.0-alpha.3",
     "tiny-invariant": "^1.1.0",
@@ -41,5 +44,6 @@
     "printWidth": 120,
     "semi": false,
     "singleQuote": true
-  }
+  },
+  "gitHead": "4dee2e3b0a48b14f3b97767d883280f58e921ff9"
 }

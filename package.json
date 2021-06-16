@@ -1,8 +1,8 @@
 {
   "name": "@xplanet/sdk",
   "license": "MIT",
-  "version": "1.2.2",
-  "description": "🛠 An SDK for building applications on top of xPlantSwap",
+  "version": "1.2.7",
+  "description": "🛠 An SDK for building applications on top of xPlanetSwap",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
@@ -44,5 +44,6 @@
     "printWidth": 120,
     "semi": false,
     "singleQuote": true
-  }
+  },
+  "gitHead": "778ea50b8c5d5d338f8a7fe870cea3b2e8f2941a"
 }

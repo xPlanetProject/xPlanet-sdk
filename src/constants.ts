@@ -1,14 +1,54 @@
 import JSBI from 'jsbi'
 
-export const FACTORY_ADDRESS = '0x422Fa5C8c789Ac8f34C6B7815cd5dbf2C60901ef'
+// exports for external consumption
+export declare type BigintIsh = JSBI | bigint | string
 
-export const INIT_CODE_HASH = '0x999166400106f530b7aa5a4c7160878495a12e0f831d3b89dd0e3a3b10f86eca'
+export enum ChainId {
+  MAINNET = 1,
+  ROPSTEN = 3,
+  RINKEBY = 4,
+  GÖRLI = 5,
+  KOVAN = 42
+}
+
+export enum TradeType {
+  EXACT_INPUT,
+  EXACT_OUTPUT
+}
+
+export enum Rounding {
+  ROUND_DOWN,
+  ROUND_HALF_UP,
+  ROUND_UP
+}
+
+export const FACTORY_ADDRESS = '0xC5Ed0e1Ca080f14033476B60c1fd1F2c700E7bE1'
+
+export const INIT_CODE_HASH = '0x70c52c24655416d2a8e197dfc45649be631841bc5ce794bf96ea774d6104f378'
+
+export const UNISWAP_FACTORY_ADDRESS = '0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f'
+
+export const UNISWAP_INIT_CODE_HASH = '0x96e8ac4277198ff8b6f785478aa9a39f403cb768dd02cbee326c3e7da348845f'
 
 export const MINIMUM_LIQUIDITY = JSBI.BigInt(1000)
 
 // exports for internal consumption
 export const ZERO = JSBI.BigInt(0)
 export const ONE = JSBI.BigInt(1)
+export const TWO = JSBI.BigInt(2)
+export const THREE = JSBI.BigInt(3)
 export const FIVE = JSBI.BigInt(5)
+export const TEN = JSBI.BigInt(10)
+export const _100 = JSBI.BigInt(100)
 export const _997 = JSBI.BigInt(997)
 export const _1000 = JSBI.BigInt(1000)
+
+export enum SolidityType {
+  uint8 = 'uint8',
+  uint256 = 'uint256'
+}
+
+export const SOLIDITY_TYPE_MAXIMA = {
+  [SolidityType.uint8]: JSBI.BigInt('0xff'),
+  [SolidityType.uint256]: JSBI.BigInt('0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff')
+}
